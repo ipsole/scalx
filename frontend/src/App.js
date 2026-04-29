@@ -114,7 +114,7 @@ function App() {
     fetchFriends();
     fetchPendingRequests();
     
-    const ws = new WebSocket(`ws://localhost:8000/ws/chat/?user_id=${user}`);
+    const ws = new WebSocket(`wss://scalx.onrender.com/ws/chat/?user_id=${user}`);
     
     ws.onmessage = (event) => {
       const parsed = JSON.parse(event.data);
