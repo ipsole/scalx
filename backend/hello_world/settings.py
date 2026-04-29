@@ -151,4 +151,8 @@ MEDIA_ROOT = BASE_DIR / "hello_world" / "media"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "https://scalx-six.vercel.app/"
+]
+
+CORS_ALLOW_CREDENTIALS = True
