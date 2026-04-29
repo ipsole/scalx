@@ -95,10 +95,9 @@ CHANNEL_LAYERS = {
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    "default": dj_database_url.config(
-        default="postgres://postgres:scalx0015@34.47.186.86:5432/postgres",
-        conn_max_age=600,
-    )
+
+    'default': dj_database_url.parse(config('DATABASE_URL'))
+
 }
 
 
