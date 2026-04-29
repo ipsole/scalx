@@ -50,7 +50,7 @@ function App() {
   // UI state
   const [expandedFriends, setExpandedFriends] = useState({});
 
-  const API_URL = "http://localhost:8000";
+  const API_URL = "https://scalx.onrender.com";
 
   // LOGIN / SIGNUP
   const handleAuth = async () => {
